@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FB2FE4E92E6AB31E004B720E /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = FB2FE4E82E6AB31E004B720E /* SwiftUIFontIcon */; };
+		FB2FE4EC2E6AB337004B720E /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = FB2FE4EB2E6AB337004B720E /* Collections */; };
+		FB2FE4EF2E6AB376004B720E /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = FB2FE4EE2E6AB376004B720E /* SwiftUICharts */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FB9D83702E65992900A677E1 /* ExpensesTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpensesTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +29,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB2FE4EF2E6AB376004B720E /* SwiftUICharts in Frameworks */,
+				FB2FE4EC2E6AB337004B720E /* Collections in Frameworks */,
+				FB2FE4E92E6AB31E004B720E /* SwiftUIFontIcon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +74,9 @@
 			);
 			name = ExpensesTracker;
 			packageProductDependencies = (
+				FB2FE4E82E6AB31E004B720E /* SwiftUIFontIcon */,
+				FB2FE4EB2E6AB337004B720E /* Collections */,
+				FB2FE4EE2E6AB376004B720E /* SwiftUICharts */,
 			);
 			productName = ExpensesTracker;
 			productReference = FB9D83702E65992900A677E1 /* ExpensesTracker.app */;
@@ -94,6 +106,11 @@
 			);
 			mainGroup = FB9D83672E65992900A677E1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FB2FE4E72E6AB31E004B720E /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
+				FB2FE4EA2E6AB337004B720E /* XCRemoteSwiftPackageReference "swift-collections" */,
+				FB2FE4ED2E6AB376004B720E /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FB9D83712E65992900A677E1 /* Products */;
 			projectDirPath = "";
@@ -251,6 +268,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEPLOYMENT_POSTPROCESSING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ExpensesTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = CRTHLKVC56;
 				ENABLE_PREVIEWS = YES;
@@ -280,6 +298,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEPLOYMENT_POSTPROCESSING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ExpensesTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = CRTHLKVC56;
 				ENABLE_PREVIEWS = YES;
@@ -324,6 +343,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB2FE4E72E6AB31E004B720E /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huybuidac/SwiftUIFontIcon";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FB2FE4EA2E6AB337004B720E /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.6;
+			};
+		};
+		FB2FE4ED2E6AB376004B720E /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = exactVersion;
+				version = "2.0.0-beta.2";
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB2FE4E82E6AB31E004B720E /* SwiftUIFontIcon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB2FE4E72E6AB31E004B720E /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
+			productName = SwiftUIFontIcon;
+		};
+		FB2FE4EB2E6AB337004B720E /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB2FE4EA2E6AB337004B720E /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		FB2FE4EE2E6AB376004B720E /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB2FE4ED2E6AB376004B720E /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB9D83682E65992900A677E1 /* Project object */;
 }

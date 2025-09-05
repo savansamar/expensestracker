@@ -34,6 +34,15 @@ struct TransactionList: View {
     }
 }
 
+struct ListTransactionListViewModelPreview {
+    static let transactionListVM: TransactionListViewModel = {
+        let vm = TransactionListViewModel()
+        // transactionListPreviewData come from preview content , it's dummy data
+        vm.transaction = transactionListPreviewData
+        return vm
+    }()
+}
+
 #Preview {
     TransactionList()
         .environmentObject(ListTransactionListViewModelPreview.transactionListVM)

@@ -95,7 +95,8 @@ final class TransactionListViewModel: ObservableObject {
         print("accumulateTransactions")
         guard !transaction.isEmpty  else { return [] }
         
-        let today = "09/02/2025".dateParsed()
+        
+        let today = Date().formatted("MM/DD/YYYY").dateParsed()
         let dateInterval = Calendar.current.dateInterval(of: .month, for: today)!
         print("dateInterval",dateInterval)
         
